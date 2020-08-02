@@ -1,24 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Conversor from './Componentes/Conversor';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Kwanza De Hoje</h1>
+      <div className="linha">
+        <Conversor moedaA="USD" moedaB="AOA"></Conversor>
+        <Conversor moedaA="AOA" moedaB="USD"></Conversor>
+      </div>
+      <div className="linha">
+        <Conversor moedaA="EUR" moedaB="AOA"></Conversor>
+        <Conversor moedaA="AOA" moedaB="EUR"></Conversor>
+      </div>
+      <div className="linha">
+        <Conversor moedaA="BRL" moedaB="AOA"></Conversor>
+        <Conversor moedaA="AOA" moedaB="BRL"></Conversor>
+      </div>
     </div>
   );
 }

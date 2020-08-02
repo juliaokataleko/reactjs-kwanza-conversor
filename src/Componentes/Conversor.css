@@ -1,0 +1,37 @@
+.conversor {
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 7px 0px rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+
+h2 {
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+input[type=text] {
+    border: 1px solid #dddddd;
+    line-height: 3em;
+    padding: 0 10px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+input[type=button] {
+    border: 1px solid #970c0c;
+    line-height: 2em;
+    padding: 0 10px;
+    width: 100%;
+    background: #970c0c;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.error {
+    margin-top: 10px;
+    display: block;
+    color: #dd1212;
+}
